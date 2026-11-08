@@ -1,0 +1,69 @@
+body {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+    min-height: 100vh; 
+    width: 100vw; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    padding: 20px;
+    box-sizing: border-box;
+}
+.container {
+    background-color: #D3D3D3;
+    max-width: 1400px; 
+    width: 100%; 
+    padding: 60px; 
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    text-align: center;
+}
+h1 {
+    color: #2c3e50;
+    font-size: 48px; 
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.container > p {
+    color: #34495e;
+    line-height: 1.8;
+    font-size: 24px; 
+    text-align: left;
+    text-align: center;
+}
+.gallery {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 40px; /* Расстояние между карточками */
+    margin: 50px 0;
+}
+.dino-card {
+    width: 380px; /* Ширина одной карточки */
+    display: flex;
+    flex-direction: column; /* Ставим картинку и текст друг под другом */
+    align-items: center; /* Выравниваем по центру */
+}
+.dino-card img {
+    width: 100%; /* Картинка занимает всю ширину карточки */
+    height: 280px; /* Высота картинки */
+    object-fit: cover; 
+    border-radius: 15px; 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s; 
+}
+.caption strong {
+    font-size: 24px;
+    color: #1e3c72; /* Красивый синий цвет для заголовка */
+}
+.caption {
+    font-size: 20px;
+    color: #2c3e50;
+    text-align: center; /* Текст по центру */
+    margin-top: 20px; /* Отступ от картинки до текста */
+    line-height: 1.5;
+}
+.dino-card img:hover {
+    transform: scale(1.05); 
+}
